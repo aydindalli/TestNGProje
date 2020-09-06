@@ -38,7 +38,7 @@ public class WindowHandleTest extends TestBase {
         String ikinciSayfaHandle = array[array.length - 1].toString();
         System.out.println(ikinciSayfaHandle);
 
-        driver.switchTo().window(sayfaninHandle);
+        driver.switchTo().window(sayfaninHandle);// ilk sayfaya handle ile geri doner
 
         }
 

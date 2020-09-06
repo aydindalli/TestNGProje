@@ -1,13 +1,12 @@
 package com.techproed.tests;
 
 import com.techproed.utilities.TestBase;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
+
 
 public class Ornek_AmazonKayitSayfasi extends TestBase {
 
