@@ -45,6 +45,7 @@ public class ActionClassTest extends TestBase {
          driver.get("http://amazon.com");
          WebElement menu = driver.findElement(By.id("nav-link-accountList"));
          Actions actions2 = new Actions(driver);
+         // mouse u moveToElement methodu kullanarak menu yu calistrabilirsin
          actions2.moveToElement(menu).perform();
         }
 
