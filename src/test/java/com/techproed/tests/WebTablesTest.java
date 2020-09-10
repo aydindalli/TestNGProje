@@ -11,6 +11,28 @@ import java.util.List;
 
 public class WebTablesTest extends TestBase {
 
+    /*
+    <table WebElement'ini incelemiştik.
+    <thead  : Tablonun üst kısmı (başlıklar vs.)
+    <tbody  : Tablonun satırlarının yer aldığı kısımdı.
+    <tr     : TableRow - satırların tagName'i
+    <td     : TableData- satırların içerisindeki hücrelerin tagName'i
+
+    *** Eğer tablodaki tüm satırları almak istiyorsak ?
+            List<WebElement> tumSatirlar = driver.findElements(By.xpath("//tbody/tr"));
+
+    *** Eğer tablodaki 3. satırı almak istersek ?
+            WebElement ucuncuSatir = driver.findElement(By.xpath("//tbody/tr[3]"));
+
+    *** Eğer tablodaki 5. satır, 3. sütunu almak istiyorsak ?
+            WebElement ucBes = driver.findElement(By.xpath("//tbody/tr[5]/td[3]"));
+
+    *** "/" ve "//" arasındaki fark nedir?
+    - Tek slash("/") childi verir.
+    - Çift slash("//") childi, torunu, ya da daha alt nesli verebilir.
+
+     */
+
     public void giris(){
         driver.get("http://fhctrip-qa.com/admin/HotelRoomAdmin");
         driver.findElement(By.id("UserName")).sendKeys("manager2");
@@ -67,6 +89,7 @@ public class WebTablesTest extends TestBase {
 
     @Test
     public void hucreYazdir(int satir,  int sutun){
+        giris();
         String xpathDegerim = "//tbody/tr["+  satir  +"]/td["+  sutun  +"]";
         WebElement hucre = driver.findElement(By.xpath(xpathDegerim));
         System.out.println(hucre.getText());
