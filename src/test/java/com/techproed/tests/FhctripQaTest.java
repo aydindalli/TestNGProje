@@ -1,6 +1,5 @@
 package com.techproed.tests;
 
-import com.techproed.pages.AmazonPage;
 import com.techproed.pages.FhcTripPage;
 import com.techproed.utilities.TestBase;
 import org.testng.annotations.Test;
@@ -16,5 +15,4 @@ public class FhctripQaTest extends TestBase {
         fhcTripPage.password.sendKeys("Man1ager2!");
         fhcTripPage.login.click();
     }
-
 }
