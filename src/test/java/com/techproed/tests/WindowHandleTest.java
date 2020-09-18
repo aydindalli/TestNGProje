@@ -4,7 +4,6 @@ import com.techproed.utilities.TestBase;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import java.util.List;
 import java.util.Set;
 
 public class WindowHandleTest extends TestBase {

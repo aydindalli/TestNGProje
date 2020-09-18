@@ -8,8 +8,6 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import javax.swing.*;
-
 public class FhcTripHotelRoomCreateTest extends TestBase {
 
 

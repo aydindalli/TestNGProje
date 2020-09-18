@@ -1,10 +1,7 @@
 package com.techproed.tests;
 
-import com.techproed.pages.AmazonPage;
 import com.techproed.pages.GooglePage;
 import com.techproed.utilities.TestBase;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 public class GoogleTest extends TestBase {

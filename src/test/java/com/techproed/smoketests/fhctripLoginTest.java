@@ -1,6 +1,5 @@
 package com.techproed.smoketests;
 
-import com.techproed.pages.FacebookLoginPage;
 import com.techproed.pages.FhcTripPage;
 import com.techproed.utilities.ConfigurationReader;
 import com.techproed.utilities.TestBase;
