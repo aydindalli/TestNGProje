@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite - belirli methodlar">
+    <test name="Test - method test">
+        <classes>
+
+            <class name="com.techproed.tests.ActionClassTest"> <!-- Once Test i sec, ardindan icindeki method u bul-->
+                <methods>
+                    <!-- Method eklemek icin "include" yaz ve Sadece "include"  ettigimiz methodlar calisir-->
+                    <include name="sagTiklama"></include>
+                    <include name="asagiYukari"></include>
+                </methods>
+            </class>
+
+            <class name="com.techproed.tests.WaitTest">  <!-- Once Test i sectik-->
+                <methods>
+                    <!-- exclude ile yazdığınız methodlar hariç, class'taki tüm testler çalıştırılır -->
+                    <exclude name="implicitlyWait"></exclude>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>

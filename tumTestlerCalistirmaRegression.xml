@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression"> <!--Her split ten sonra yapilir ya da 3 ayda bir-->
+    <test name="Tüm Testler">
+
+        <!-- TestNG'de tüm testleri çalıştırmak istersek, TUM PAKETLERI CALISTIRMAK yeterli olur. -->
+        <packages>
+            <package name=".*"></package>   <!--  ".*"  TUM PAKETLERI ALIR -->
+        </packages>
+
+    </test>
+</suite>

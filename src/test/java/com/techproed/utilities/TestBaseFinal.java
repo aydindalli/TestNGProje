@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+
 public abstract class TestBaseFinal {
     protected WebDriver driver;
     protected static ExtentReports extentReports;

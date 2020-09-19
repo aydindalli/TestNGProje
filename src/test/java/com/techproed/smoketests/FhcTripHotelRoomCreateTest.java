@@ -9,6 +9,19 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class FhcTripHotelRoomCreateTest extends TestBase {
+    /*
+    ----------------------------HOTEL ODASI OLUŞTURMA-------------------------
+***** Bulmamız gereken webelementler.
+IDHotel, Code, Name, Location, Description, Price, 500, Room type,
+Max Adult count, Max Children count, Approved, Save
+1. Adım : Tüm webelementleri "pages" paketinin altında oluşturacağımız,
+FhcTripHotelRoomCreatePage class'ının içerisinde @FindBy şeklinde bulalım.
+2. Adım : smoketests -> FhcTripHotelRoomCreateTest class oluşturalım.
+3. Adım : FhcTripHotelRoomCreateTest class'ının içerisinde @Test methodu oluşturacağız.
+4. Adım : driver.get(ConfigurationReader.getProperty("room_create_url")) ile HotelRoomCreate sayfasına gidelim.
+5. Adım : FhcTripHotelRoomCreatePage class'ından nesne oluşturalım ve içerisindeki webelementleri kullanalım.
+6. Adım : WebElementlerin içerisini dolduralım.
+     */
 
 
     @Test

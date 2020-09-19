@@ -7,7 +7,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-public class HotelTest extends TestBase {
+public class FhcTripHotelTest extends TestBase {
 
     public void giris(){
         driver.get("http://www.fhctrip-qa.com/admin/HotelAdmin/Create");
@@ -15,7 +15,7 @@ public class HotelTest extends TestBase {
         driver.findElement(By.id("Password")).sendKeys("Man1ager2!"+ 	Keys.ENTER);
     }
 
-    @Test
+    @Test (groups = {"fhctrip","hotelolustruma"})
     public void aramaHotel(){
         giris();
 
@@ -27,7 +27,7 @@ public class HotelTest extends TestBase {
         hotelPage.telefon.sendKeys("0212 540 1234");
         hotelPage.email.sendKeys("dallilar@gmail.com");
 
-        Select select = new Select(hotelPage.idGroup);
+        Select select = new Select(hotelPage.idGroup); // dropdown
         select.selectByIndex(2);
         hotelPage.buttonSave.click();
     }

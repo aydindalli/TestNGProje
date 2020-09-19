@@ -19,7 +19,7 @@ public class GlpSignUpTest {
     public void beforeTest(){
         System.out.println("beforeTest çalıştı");
     }
-    @Test
+    @Test (groups = "glbtrader")
     public void Test() {
         Driver.getDriver().get(ConfigurationReader.getProperty("glb_web"));
 
