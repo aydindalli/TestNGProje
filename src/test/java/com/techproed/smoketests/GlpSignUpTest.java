@@ -10,6 +10,13 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class GlpSignUpTest {
+    /*
+    @BeforeSuite
+        @BeforeTest
+            @BeforeClass
+                @BeforeGroup
+                    @BeforeMethod
+     */
 
     @BeforeSuite
     public void beforeSuite(){
